@@ -58,11 +58,27 @@ public class ethanTest {
         return concatWord;
     }
 // 8. Write a method that takes two Strings, firstName and lastName, and returns a full name (the full name should be the first and the last name as a String separated by a space).
-
+    public static String getFullName(String firstName, String lastName) {
+        return firstName + " " + lastName;
+    }
 // 9. Write a method that takes an array of int and returns true if the sum of all the ints in the array is greater than 100.
-
+    private static boolean trueIfThree(int[] arr) {
+        int arrSum= 0;
+        for (int num : arr) {
+            arrSum += num;
+        }
+        if (arrSum > 100) {
+            return true;
+        }
+    }
 // 10. Write a method that takes an array of double and returns the average of all the elements in the array.
-
+        private static double calculateTotal(double[] amounts) {
+            double arrAvg = 0.00;
+            for (double amount : amounts) {
+                arrAvg+= amount;
+            }
+            arrAvg /= amounts.length;
+        }
 // 11. Write a method that takes two arrays of double and returns true if the average of the elements in the first array is greater than the average of the elements in the second array.
         private boolean weighValues(double[] arr1, double[] arr2) {
             double arr1Avg= 0.00;
