@@ -1,3 +1,4 @@
+// 13. Create a method of your own that solves a problem. In comments, write what the method does and why you created it.
 public class problem13 {
     public static void main(String[] args) {
         double[] income = {1000.00, 1500.00, 2000.00, 1200.00, 1800.00, 2200.00, 1300.00, 1700.00};
