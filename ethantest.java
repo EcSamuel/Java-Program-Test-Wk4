@@ -75,7 +75,7 @@ public class ethanTest {
     public static String getFullName(String firstName, String lastName) {
         return firstName + " " + lastName;
     }
-    
+
     // 9. Write a method that takes an array of int and returns true if the sum of all the ints in the array is greater than 100.
     private static boolean isSumGreaterThan100(int[] arr) {
         int arrSum = 0;
@@ -100,6 +100,6 @@ public class ethanTest {
     }
     // 12. Write a method called willBuyDrink that takes a boolean isHotOutside, and a double moneyInPocket, and returns true if it is hot outside and if moneyInPocket is greater than 10.50.
     private static boolean willBuyDrink(boolean isHotOutside, double moneyInPocket) {
-        return isHotOutside && moneyInPocket > 10.50;
+        return isHotOutside == true && moneyInPocket > 10.50;
     }
 }
