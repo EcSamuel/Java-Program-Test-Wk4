@@ -75,6 +75,7 @@ public class ethanTest {
     public static String getFullName(String firstName, String lastName) {
         return firstName + " " + lastName;
     }
+    
     // 9. Write a method that takes an array of int and returns true if the sum of all the ints in the array is greater than 100.
     private static boolean isSumGreaterThan100(int[] arr) {
         int arrSum = 0;
