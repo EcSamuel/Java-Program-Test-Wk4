@@ -1,9 +1,11 @@
+import java.util.Arrays;
+
 public class ethanTest {
-    public static void main(String[] args, int[] num) {
+    public static void main(String[] args) {
         // 1. Create an array of int called ages that contains the following values: 3, 9, 23, 64, 2, 8, 28, 93.
         int[] ages = {3,9,23,64,2,8,28,93};
         // a. Programmatically subtract the value of the first element in the array from the value in the last element of the array (i.e. do not use ages[7] in your code). Print the result to the console. 
-        System.out.print(ages[ages.length-1]-ages[0]);
+        System.out.println(ages[ages.length-1]-ages[0]);
         // b. Create a new array of int called ages2 with 9 elements (ages2 will be longer than the ages array, and have more elements).  
         int[] ages2 = new int[9];
         // i. Make sure that there are 9 elements of type int in this new array.
@@ -17,12 +19,11 @@ public class ethanTest {
         ages2[7] = 24;
         ages2[8] = 33;
         // ii. Repeat the subtraction from Step 1.a. (Programmatically subtract the value of the first element in the new array ages2 from the last element of ages2).
-        System.out.print(ages2[ages2.length-1]-ages2[0]);
+        System.out.println(ages2[ages2.length-1]-ages2[0]);
         // iii. Show that using the index values for the elements is dynamic (works for arrays of different lengths).
-        System.out.print(ages2[ages.length-1]-ages2[0]);
+        System.out.println(ages2[ages.length-1]-ages2[0]);
         // I'll note that the "ages.length-1" is not a typo. I wasn't sure how to properly express that other than that ages is a different length, which shows it dynamically?
         // c. Use a loop to iterate through the array and calculate the average age. Print the result to the console.
-        System.out.print("This will be zero as written if done over ages2");
         int sum =0;
         for (int age : ages) {
             sum += age;
@@ -33,10 +34,12 @@ public class ethanTest {
         String[] names = {"Sam", "Tommy", "Tim", "Sally", "Buck", "Bob"};
     
 // a. Use a loop to iterate through the array and calculate the average number of letters per name. Print the result to the console.
+        int totalLength = 0;
         for (String name : names) {
-            int length = name.length();
-            System.out.println(length);
+            totalLength += name.length();
         }
+        double nameLengthAvg = (double) totalLength / names.length;
+        System.out.println("Average Name Length: " +nameLengthAvg);
 // b. Use a loop to iterate through the array again and concatenate all the names together, separated by spaces, and print the result to the console.
         String listaNames = "";
         for (String name : names) {
@@ -44,14 +47,15 @@ public class ethanTest {
         }
         System.out.println(listaNames);
         // 3. How do you access the last element of any array?
-            // arr[arr.length-1]
+            System.out.println("arr[arr.length-1]");
         // 4. How do you access the first element of any array?
-            // arr[0]
+            System.out.println("arr[0]");
         // 5. Create a new array of int called nameLengths. Write a loop to iterate over the previously created names array and add the length of each name to the nameLengths array.
         int[] nameLengths = new int[names.length];
         for (int i = 0; i < names.length; i++) {
             nameLengths[i] = names[i].length();
         }
+        System.out.println(Arrays.toString(nameLengths));
         // 6. Write a loop to iterate over the nameLengths array and calculate the sum of all the elements in the array. Print the result to the console.
         int nameLengthsSum = 0;
         for (int length : nameLengths) {
